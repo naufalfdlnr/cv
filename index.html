@@ -12,6 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/pie.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
     </noscript>
@@ -19,6 +21,7 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <link href="css/aos.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="cv.css">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -66,7 +69,7 @@
             <div class="header-bio mt-3">
               <div data-aos="zoom-in" data-aos-delay="0">
                 <h2 class="h1">Naufal Fadlan</h2>
-                <p>Junior Programmer</p>
+                <p>Frontend Developer | ReactJs Developer</p>
               </div>
               <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
                 <nav role="navigation">
@@ -76,6 +79,8 @@
                     <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/naufalfdlnr" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="https://github.com/naufalfdlnr" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/naufalfadlan/" title="Linkedin"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Linkedin</span></a>
                     </li>
                   </ul>
                 </nav>
@@ -93,7 +98,7 @@
       <div class="row">
         <div class="col-md-6">
           <h2 class="h2 fw-light mb-4">About Me</h2>
-          <p>Hello! I’m Naufal Fadlan. I am passionate about anything related to programming. I am a skilled <strong>front-end developer</strong>. I am a quick learner and a team worker that gets the job done.</p>
+          <p>Hello! I’m Naufal Fadlan.My background is in the networking field, including technologies like <strong>Cisco and Mikrotik</strong>. However, i interested about web development, particularly skilled in <strong>Frontend Development</strong>. I am a quick learner and a team worker who gets the job until done.</p>
         </div>
         <div class="col-md-5 offset-lg-1">
           <div class="row mt-2">
@@ -135,35 +140,71 @@
         <div class="col-md-6">
           <div class="mb-3"><span class="fw-bolder">HTML</span>
             <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 80%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Advance</div>
+              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
             </div>
           </div>
           <div class="mb-3"><span class="fw-bolder">CSS</span>
             <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Advance</div>
+              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
             </div>
           </div>
           <div class="mb-3"><span class="fw-bolder">Python</span>
             <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Advance</div>
+              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
             </div>
           </div>
           <div class="mb-3"><span class="fw-bolder">JavaScript</span>
             <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Elementary</div>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="mb-3"><span class="fw-bolder">ReactJs</span>
             <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 50%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">Elementary</div>
             </div>
           </div>
           <div class="mb-3"><span class="fw-bolder">Frappe Framework</span>
             <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 50%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Elementary</div>
             </div>
+          </div>
+          <div class="mb-3"><span class="fw-bolder">Mikrotik</span>
+            <div class="progress my-2 rounded" style="height: 20px">
+              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+            </div>
+          </div>
+          <div class="mb-3"><span class="fw-bolder">Sisco</span>
+            <div class="progress my-2 rounded" style="height: 20px">
+              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="h2 fw-light mt-4 mb-4">Soft Skills</h2>
+      <div class="d-flex" data-aos="zoom-in" data-aos-delay="200">
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        <div class="d-flex row ml-2">
+          <div class="d-flex align-items-center">
+            <div class="dot1"></div>
+            <span class="fw-bolder">Communication</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="dot2"></div>
+            <span class="fw-bolder">Problem Solving</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="dot3"></div>
+            <span class="fw-bolder">Time Management</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="dot4"></div>
+            <span class="fw-bolder">Flexibility</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="dot5"></div>
+            <span class="fw-bolder">Adaptability</span>
           </div>
         </div>
       </div>
@@ -176,7 +217,7 @@
       <div class="timeline">
         <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Programmer <span class="text-muted h6">at PT. SOPWER TEKNOLOGI INDONESIA</span></div>
+            <div class="h5">Frontend Developer <span class="text-muted h6">at PT. SOPWER TEKNOLOGI INDONESIA</span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
             <div class="text-muted text-small mb-3">June, 2023 - Present</div>
@@ -226,7 +267,7 @@
     <div class="portfolio-section">
       <h2 class="h2 fw-light mb-4">Portfolio</h2>
       <div class="row g-0">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
           <div id="demo" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -263,7 +304,7 @@
             <p class="text-muted">Built highly performant website for an E-commerce. Worked with back-end team to timely deliver codebase in ReactJs.</p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
           <div id="demo" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -314,6 +355,8 @@
               <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/naufalfdlnr" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
               </li>
               <li class="nav-item"><a class="nav-link" href="https://github.com/naufalfdlnr" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/naufalfadlan/" title="Linkedin"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Linkedin</span></a>
               </li>
             </ul>
           </nav>

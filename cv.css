@@ -1,0 +1,43 @@
+.canvasjs-chart-credit {
+    visibility: hidden !important;
+}
+
+.dot1 {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin-right: 10px;
+    background-color: #56F5F3;
+}
+
+.dot2 {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin-right: 10px;
+    background-color: #46DCE4;
+}
+
+.dot3 {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin-right: 10px;
+    background-color: #3CC3D5;
+}
+
+.dot4 {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin-right: 10px;
+    background-color: #2FABC4;
+}
+
+.dot5 {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin-right: 10px;
+    background-color: #2192B5;
+}
